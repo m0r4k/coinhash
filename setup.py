@@ -56,7 +56,7 @@ ltc_scrypt_module = Extension('coinhash.ltc_scrypt',
 
 setup(
     name = 'coinhash',
-    version = '1.0.1',
+    version = '1.1',
     description = 'Compilation of coin hash algorithms.',
     long_description = 'Compilation of coin hash algorithms. Individual licenses are located in their respective directories.',
     package_dir = {
