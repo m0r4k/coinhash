@@ -1,5 +1,8 @@
 import hashlib
 
+def SHA256Hash(x):
+    return hashlib.sha256(x).digest()
+
 def SHA256dHash(x):
     return hashlib.sha256(hashlib.sha256(x).digest()).digest()
 
