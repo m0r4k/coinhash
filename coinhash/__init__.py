@@ -7,9 +7,11 @@ import darkcoin_hash
 import ltc_scrypt
 
 def SHA256Hash(x):
+    """Equivalent to hashlib.sha256(x).digest()."""
     return hashlib.sha256(x).digest()
 
 def SHA256dHash(x):
+    """Two rounds of SHA256."""
     return hashlib.sha256(hashlib.sha256(x).digest()).digest()
 
 def NeoscryptHash(x):
@@ -28,4 +30,5 @@ def X11Hash(x):
     return darkcoin_hash.getPoWHash(x)
 
 def ScryptHash(x):
+    """Scrypt (Litecoin parameters) hash."""
     return ltc_scrypt.getPoWHash(x)

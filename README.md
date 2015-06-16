@@ -9,6 +9,7 @@ This package is a collection of various hash algorithms used by cryptocurrencies
 ```python
     import coinhash
     data = '00'.decode('hex')
+    sha256_digest = coinhash.SHA256Hash(data)
     sha256d_digest = coinhash.SHA256dHash(data)
     neoscrypt_digest = coinhash.NeoscryptHash(data)
     skein_digest = coinhash.SkeinHash(data)
@@ -21,3 +22,5 @@ This package is a collection of various hash algorithms used by cryptocurrencies
 ## License
 
 Individual licenses are located within each algorithm's directory.
+They are also located in the top-level directory in files named
+"LICENSE-(package name)".
