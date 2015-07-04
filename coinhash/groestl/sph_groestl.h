@@ -40,6 +40,7 @@ extern "C"{
 #endif
 
 #include <stddef.h>
+#include <stdint.h>
 #include "sph_types.h"
 
 /**

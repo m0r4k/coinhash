@@ -56,12 +56,12 @@ ltc_scrypt_module = Extension('coinhash.ltc_scrypt',
 
 setup(
     name = 'coinhash',
-    version = '1.1.2',
+    version = '1.1.3',
     description = 'Compilation of coin hash algorithms.',
     long_description = 'Compilation of hash algorithms used by cryptocurrencies.',
     maintainer = 'Tyler Willis',
     maintainer_email = 'kefkius@mail.com',
-    url = 'https://github.com/Kefkius/coinhash',
+    url = 'https://github.com/mazaclub/coinhash',
     keywords = ['cryptocurrency', 'coin', 'scrypt', 'neoscrypt', 'x11', 'qubit', 'skein', 'groestl'],
     package_dir = {
         'coinhash': 'coinhash'
@@ -70,6 +70,7 @@ setup(
                 skeinhash_module,
                 qubit_hash_module,
                 groestlcoin_hash_module,
+		ltc_scrypt_module,
                 darkcoin_hash_module],
     py_modules = [
         'coinhash.__init__'
