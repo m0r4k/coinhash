@@ -56,7 +56,7 @@ ltc_scrypt_module = Extension('coinhash.ltc_scrypt',
 
 setup(
     name = 'coinhash',
-    version = '1.1.4',
+    version = '1.1.5',
     description = 'Compilation of coin hash algorithms.',
     long_description = 'Compilation of hash algorithms used by cryptocurrencies.',
     maintainer = 'Tyler Willis',

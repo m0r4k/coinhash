@@ -32,3 +32,14 @@ def X11Hash(x):
 def ScryptHash(x):
     """Scrypt (Litecoin parameters) hash."""
     return ltc_scrypt.getPoWHash(x)
+
+algorithms = {
+    # SHA256Hash is not advertised.
+    'SHA256d': SHA256dHash,
+    'NeoScrypt': NeoscryptHash,
+    'Skein': SkeinHash,
+    'Qubit': QubitHash,
+    'Groestl': GroestlHash,
+    'X11': X11Hash,
+    'Scrypt': ScryptHash,
+}
